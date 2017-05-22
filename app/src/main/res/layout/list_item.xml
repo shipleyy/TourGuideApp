@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="@dimen/fab_margin">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/im_placeImg"
+            android:layout_width="@dimen/list_im_size"
+            android:layout_height="@dimen/list_im_size"
+            android:src="@drawable/lisbon_round"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_placeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Place name here"
+            android:layout_toEndOf="@id/im_placeImg"
+            style="@style/cardViewText"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_placeType"
+            tools:text="Sight"
+            android:layout_toEndOf="@id/im_placeImg"
+            android:layout_below="@id/tv_placeName"
+            style="@style/cardViewText"/>
+
+        <TextView
+            android:id="@+id/tv_placeHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="opening hours"
+            android:layout_toEndOf="@id/im_placeImg"
+            android:layout_below="@id/tv_placeType"
+            style="@style/cardViewText"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
