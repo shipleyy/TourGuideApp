@@ -9,6 +9,58 @@
     <string name="restaurants">Eat Out</string>
     <string name="nightlife">Nightlife</string>
     <string name="daytrips">Day Trips</string>
+
+    <!-- Different types of places -->
+    <string name="type_historical">Historical</string>
+    <string name="type_beach">Beach</string>
+
+    <!-- DaytripFragment strings -->
+    <string name="sintra">Sintra</string>
+    <string name="sintra_hours">Sun - Sat 10:00 am - 7:00 pm</string>
+    <string name="cascais_hours">Tue - Sun 10:00 am - 6:00 pm</string>
+    <string name="cascais">Cascais</string>
+    <string name="costa">Costa da Caparica</string>
+    <string name="costa_hours">Sun - Sat 9:00 am - 6:00 pm</string>
+    <string name="mafra">Mafra</string>
+    <string name="mafra_hours">Tue - Sun 10:00 am - 5:00 pm</string>
+
+    <!-- NightlifeFragment strings strings -->
+    <string name="henneseys">Hennesey\'s</string>
+    <string name="henneseys_hours">Sun - Sat 10:00 am - 2:00 am</string>
+    <string name="type_english">English Pub</string>
+    <string name="chinese">Pavilhao Chinese</string>
+    <string name="chinese_hours">Tue - Sun 10:00 am - 2:00 am</string>
+    <string name="type_irish">Irish Pub</string>
+    <string name="pensao">Pensao do Amor</string>
+    <string name="pensao_hours">Sun - Sat 6:00 pm - 04:00 am</string>
+    <string name="type_portuguese">Portuguese</string>
+    <string name="urban">Urban Beach</string>
+    <string name="urban_hours">Tue - Sun 10:00 am - 5:00 am</string>
+    <string name="type_disco">Disco</string>
+
+    <!-- RestaurantFragment strings -->
+    <string name="pasteis">Pasteis de Belem</string>
+    <string name="pasteis_hours">Sun - Sat 09:00 am - 8:00 pm</string>
+    <string name="type_italian">Italian</string>
+    <string name="belcanto">Belcanto</string>
+    <string name="belcanto_hours">Tue - Sun 11:00 am - 11:00 pm</string>
+    <string name="type_japanese">Japanese</string>
+    <string name="comida">Casa da Comida</string>
+    <string name="comida_hours">Sun - Sat 11:00 am - 10:00 pm</string>
+    <string name="alma">Restaurante Alma</string>
+    <string name="alma_hours">Tue - Sun 10:00 am - 11:00 pm</string>
+    <string name="type_danish">Danish</string>
+
+    <!-- SightsFragment strings -->
+    <string name="oceanarium">Lisbon Oceanarium</string>
+    <string name="oceanarium_hours">Sun - Sat 10:00 am - 7:00 pm</string>
+    <string name="type_experience">Experience</string>
+    <string name="jeronimos">Jeronimos Monastary</string>
+    <string name="jeronimos_hours">Tue - Sun 10:00 am - 6:00 pm</string>
+    <string name="castelo">Castelo de S. Jorge</string>
+    <string name="castelo_hours">Sun - Sat 9:00 am - 6:00 pm</string>
+    <string name="torre">Torre de Belem</string>
+    <string name="torre_hours">Tue - Sun 10:00 am - 5:00 pm</string>
 </resources>
 
 

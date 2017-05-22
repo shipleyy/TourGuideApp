@@ -3,6 +3,7 @@ package com.lisbonoasis.app.tourguideapp;
 import android.app.Activity;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,10 +17,10 @@ import java.util.ArrayList;
  * Created by simon on 22/05/2017.
  */
 
-public class PlacesAdapter extends ArrayAdapter<Places> {
+public class PlacesAdapter extends ArrayAdapter<Place> {
 
 
-    public PlacesAdapter(Activity context, ArrayList<Places> places) {
+    public PlacesAdapter(Activity context, ArrayList<Place> places) {
         super(context, 0, places);
     }
 
@@ -28,13 +29,13 @@ public class PlacesAdapter extends ArrayAdapter<Places> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         View listItemView = convertView;
+
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
-
         // Get the current item
-        final Places currentPlace = getItem(position);
+        final Place currentPlace = getItem(position);
 
         // Declare and set the place name TextView for the current item
         TextView placeNameTextView = (TextView) listItemView.findViewById(R.id.tv_placeName);

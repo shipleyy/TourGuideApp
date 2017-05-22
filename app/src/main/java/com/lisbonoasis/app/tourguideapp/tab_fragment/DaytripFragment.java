@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.lisbonoasis.app.tourguideapp.Places;
+import com.lisbonoasis.app.tourguideapp.Place;
 import com.lisbonoasis.app.tourguideapp.PlacesAdapter;
 import com.lisbonoasis.app.tourguideapp.R;
 
@@ -32,13 +32,13 @@ public class DaytripFragment extends Fragment {
 
 
         // Sights ArrayList
-        final ArrayList<Places> daytrips = new ArrayList<>();
+        final ArrayList<Place> daytrips = new ArrayList<>();
 
         // Populating the ArrayList
-        daytrips.add(new Places("Sintra", "Sun - Sat 10:00 am - 7:00 pm", "Historical", R.drawable.wiki_sintra_btn));
-        daytrips.add(new Places("Cascais", "Tue - Sun 10:00 am - 6:00 pm", "Beach", R.drawable.wiki_cascais_btn));
-        daytrips.add(new Places("Costa da Caparica", "Sun - Sat 9:00 am - 6:00 pm", "Beach", R.drawable.wiki_cascais_btn));
-        daytrips.add(new Places("Mafra", "Tue - Sun 10:00 am - 5:00 pm", "Historical", R.drawable.wiki_lisbon_btn));
+        daytrips.add(new Place(getString(R.string.sintra), getString(R.string.sintra_hours), getString(R.string.type_historical), R.drawable.wiki_sintra_btn));
+        daytrips.add(new Place(getString(R.string.cascais), getString(R.string.cascais_hours), getString(R.string.type_beach), R.drawable.wiki_cascais_btn));
+        daytrips.add(new Place(getString(R.string.costa), getString(R.string.costa_hours), getString(R.string.type_beach), R.drawable.wiki_cascais_btn));
+        daytrips.add(new Place(getString(R.string.mafra), getString(R.string.mafra_hours), getString(R.string.type_historical), R.drawable.wiki_lisbon_btn));
 
 
         // setting up the adapter

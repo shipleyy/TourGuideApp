@@ -26,13 +26,17 @@ class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         // getItem is called to instantiate the fragment for the given page.
-        if(position == 0) {
-            return new SightsFragment();
-        } else if (position == 1) {
-            return new RestaurantsFragment();
-        } else if(position == 2) {
-            return new NightlifeFragment();
-        } else return new DaytripFragment();
+        switch (position) {
+            case 0:
+                return new SightsFragment();
+            case 1:
+                return new RestaurantsFragment();
+            case 2:
+                return new NightlifeFragment();
+            case 3:
+                return new DaytripFragment();
+        }
+        return null;
     }
 
     @Override

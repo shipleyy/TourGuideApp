@@ -4,7 +4,7 @@ package com.lisbonoasis.app.tourguideapp;
  * Created by simon on 22/05/2017.
  */
 
-public class Places {
+public class Place {
 
     private final String mPlaceName;
 
@@ -14,7 +14,7 @@ public class Places {
 
     private final int mPlaceImgId;
 
-    public Places(String placeName, String placeHours, String placeType, int placeImgId) {
+    public Place(String placeName, String placeHours, String placeType, int placeImgId) {
         mPlaceName = placeName;
         mPlaceHours = placeHours;
         mPlaceType = placeType;

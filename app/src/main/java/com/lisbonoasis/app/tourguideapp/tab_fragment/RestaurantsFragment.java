@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.lisbonoasis.app.tourguideapp.Places;
+import com.lisbonoasis.app.tourguideapp.Place;
 import com.lisbonoasis.app.tourguideapp.PlacesAdapter;
 import com.lisbonoasis.app.tourguideapp.R;
 
@@ -32,13 +32,13 @@ public class RestaurantsFragment extends Fragment {
 
 
         // Sights ArrayList
-        final ArrayList<Places> restaurants = new ArrayList<>();
+        final ArrayList<Place> restaurants = new ArrayList<>();
 
         // Populating the ArrayList
-        restaurants.add(new Places("Pasteis de Belem", "Sun - Sat 09:00 am - 8:00 pm", "Italian", R.drawable.lisbon_round));
-        restaurants.add(new Places("Belcanto", "Tue - Sun 11:00 am - 11:00 pm", "Japanese", R.drawable.lisbon_round));
-        restaurants.add(new Places("Casa da Comida", "Sun - Sat 11:00 am - 10:00 pm", "Portuguese", R.drawable.lisbon_round));
-        restaurants.add(new Places("Restaurante Alma", "Tue - Sun 10:00 am - 11:00 pm", "Danish", R.drawable.lisbon_round));
+        restaurants.add(new Place(getString(R.string.pasteis), getString(R.string.pasteis_hours), getString(R.string.type_italian), R.drawable.lisbon_round));
+        restaurants.add(new Place(getString(R.string.belcanto), getString(R.string.belcanto_hours), getString(R.string.type_japanese), R.drawable.lisbon_round));
+        restaurants.add(new Place(getString(R.string.comida), getString(R.string.comida_hours), getString(R.string.type_portuguese), R.drawable.lisbon_round));
+        restaurants.add(new Place(getString(R.string.alma), getString(R.string.alma_hours), getString(R.string.type_danish), R.drawable.lisbon_round));
 
 
         // setting up the adapter

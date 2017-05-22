@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.lisbonoasis.app.tourguideapp.Places;
+import com.lisbonoasis.app.tourguideapp.Place;
 import com.lisbonoasis.app.tourguideapp.PlacesAdapter;
 import com.lisbonoasis.app.tourguideapp.R;
 
@@ -32,13 +32,13 @@ public class NightlifeFragment extends Fragment {
 
 
         // Sights ArrayList
-        final ArrayList<Places> nightlife = new ArrayList<>();
+        final ArrayList<Place> nightlife = new ArrayList<>();
 
         // Populating the ArrayList
-        nightlife.add(new Places("Hennesey's", "Sun - Sat 10:00 am - 2:00 am", "English Pub", R.drawable.wiki_cascais_btn));
-        nightlife.add(new Places("Pavilhao Chinese", "Tue - Sun 10:00 am - 2:00 am", "Irish Pub", R.drawable.wiki_lisbon_btn));
-        nightlife.add(new Places("Pensao do Amor", "Sun - Sat 6:00 pm - 04:00 am", "Portuguese Bar", R.drawable.wiki_sintra_btn));
-        nightlife.add(new Places("Urban Beach", "Tue - Sun 10:00 am - 5:00 am", "Disco", R.drawable.wiki_cascais_btn));
+        nightlife.add(new Place(getString(R.string.henneseys), getString(R.string.henneseys_hours), getString(R.string.type_english), R.drawable.wiki_cascais_btn));
+        nightlife.add(new Place(getString(R.string.chinese), getString(R.string.chinese_hours), getString(R.string.type_irish), R.drawable.wiki_lisbon_btn));
+        nightlife.add(new Place(getString(R.string.pensao), getString(R.string.pensao_hours), getString(R.string.type_portuguese), R.drawable.wiki_sintra_btn));
+        nightlife.add(new Place(getString(R.string.urban), getString(R.string.urban_hours), getString(R.string.type_disco), R.drawable.wiki_cascais_btn));
 
 
         // setting up the adapter
